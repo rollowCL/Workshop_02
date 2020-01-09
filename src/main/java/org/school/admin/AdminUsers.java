@@ -47,7 +47,7 @@ public class AdminUsers extends HttpServlet {
             usersList.add(allData);
         }
 
-        request.setAttribute("users", usersList);
+        request.setAttribute("users", users);
         getServletContext().getRequestDispatcher("/adminUsers.jsp").forward(request,response);
 
 
